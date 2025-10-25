@@ -43,3 +43,7 @@
 - [x] Change CTA button text from "Jetzt unverbindlich beraten lassen" to "Jetzt unverbindlich schreiben"
 - [x] Add comprehensive "Unsere Leistungen" section with all service detailsils
 
+
+- [x] Change CTA button background to WhatsApp green (#25D366)
+- [x] Add 6th service item to make layout symmetrical (3x2 grid)
+

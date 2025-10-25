@@ -183,6 +183,14 @@ export default function Home() {
                 <p className="text-muted-foreground">Unser engagiertes Kundensupport-Team steht dir jederzeit zur Verfügung, um Fragen zu beantworten, Schadensfälle abzuwickeln oder Unterstützung zu bieten. Wir sind nur eine WhatsApp-Nachricht oder eine E-Mail entfernt.</p>
               </div>
             </div>
+
+            <div className="flex items-start gap-4">
+              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-foreground">Schnelle Schadensregulierung</h3>
+                <p className="text-muted-foreground">Transparente und zügige Abwicklung im Schadensfall. Wir sorgen dafür, dass du schnell die Unterstützung bekommst, die du brauchst – ohne lange Wartezeiten oder komplizierte Formulare.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -198,7 +206,7 @@ export default function Home() {
           </p>
           <Button 
             size="lg" 
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xl px-12 py-8 shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105"
+            className="bg-[#25D366] hover:bg-[#20BA5A] text-white text-xl px-12 py-8 shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105"
             onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
           >
             <MessageCircle className="mr-3 h-7 w-7" />
