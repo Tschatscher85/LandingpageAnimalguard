@@ -11,3 +11,8 @@
 - [x] Add footer with legal links
 - [x] Optimize images and SEO
 
+
+- [x] Add custom Allianz Jaeger logo to the page
+- [x] Update Impressum link to correct URL
+- [x] Update Datenschutz link to correct URL
+

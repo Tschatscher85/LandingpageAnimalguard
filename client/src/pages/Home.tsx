@@ -8,6 +8,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Header with Logo */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="container py-4">
+          <img src="/logo.png" alt="Allianz Jaeger Logo" className="h-12 md:h-16" />
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-[url('/hero-pets.jpg')] bg-cover bg-center opacity-20"></div>
@@ -270,10 +277,10 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-lg mb-4">Rechtliches</h4>
               <div className="space-y-2 text-sm">
-                <a href="https://www.allianz.de/impressum/" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background transition-colors">
+                <a href="https://vertretung.allianz.de/agentur.svenjaeger/impressum/" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background transition-colors">
                   Impressum
                 </a>
-                <a href="https://www.allianz.de/datenschutz/" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background transition-colors">
+                <a href="https://vertretung.allianz.de/agentur.svenjaeger/datenschutz/" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background transition-colors">
                   Datenschutz
                 </a>
               </div>
