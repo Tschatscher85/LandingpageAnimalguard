@@ -54,13 +54,13 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-                Maßgeschneiderte Versicherung für dein Haustier
+                Dein Tier verdient den besten Schutz
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Als erfahrener Allianz-Versicherungsexperte verstehe ich, dass jedes Tier einzigartig ist und individuelle Bedürfnisse hat. Deshalb biete ich maßgeschneiderte Versicherungspakete an, die speziell auf die Gesundheit und Sicherheit deines Haustieres zugeschnitten sind.
+                Mal ehrlich: Dein Vierbeiner ist mehr als nur ein Haustier – er ist Familie. Und genau deshalb sollte auch sein Versicherungsschutz perfekt passen. Ich bin Sven Jaeger, dein Allianz-Partner vor Ort, und ich weiß: Jedes Tier ist anders. Deshalb gibt's bei mir keine Standard-Lösungen von der Stange, sondern Versicherungen, die wirklich zu euch beiden passen.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Egal ob Hund, Katze, Kaninchen oder Pferd – ich biete umfassenden Schutz vor unerwarteten Tierarztkosten, Krankheiten und Unfällen. Mit der Allianz musst du dir keine Sorgen mehr um finanzielle Belastungen machen – dein Haustier erhält immer die bestmögliche medizinische Versorgung.
+                Ob Hund, Katze, Kaninchen oder Pferd – mit der richtigen Tierversicherung bist du auf der sicheren Seite. Unerwartete Tierarztkosten, Krankheiten oder Unfälle? Kein Problem! Du konzentrierst dich auf deinen Liebling, ich kümmere mich um den Rest. So einfach kann Versicherung sein.
               </p>
             </div>
             <div className="relative">
@@ -86,9 +86,9 @@ export default function Home() {
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Umfassender Schutz</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Rundum-Schutz, der hält</h3>
                 <p className="text-muted-foreground">
-                  Unsere Versicherungsangebote decken eine breite Palette von medizinischen Leistungen ab, einschließlich tierärztlicher Behandlungen, Operationen, Medikamenten und vielem mehr.
+                  Von der Routine-Untersuchung bis zur Not-OP: Die Allianz Tierversicherung deckt alles ab, was dein Tier braucht. Behandlungen, Operationen, Medikamente – du entscheidest, was dir wichtig ist, ich finde den passenden Tarif.
                 </p>
               </CardContent>
             </Card>
@@ -98,9 +98,9 @@ export default function Home() {
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Persönliche Beratung</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Persönlich. Direkt. Ehrlich.</h3>
                 <p className="text-muted-foreground">
-                  Kein Callcenter, sondern Kompetenz gleich beim ersten Kontakt! Als dein persönlicher Allianz-Berater stehe ich dir mit langjähriger Erfahrung zur Seite.
+                  Kein Callcenter, keine Warteschleifen. Bei mir erreichst du direkt einen Ansprechpartner, der sich auskennt und Zeit für dich hat. Versprochen! Ruf an, schreib mir per WhatsApp oder komm vorbei – wie's dir passt.
                 </p>
               </CardContent>
             </Card>
@@ -110,9 +110,9 @@ export default function Home() {
                 <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Schnelle Abwicklung</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Unkompliziert & schnell</h3>
                 <p className="text-muted-foreground">
-                  Unser engagiertes Team steht dir jederzeit zur Verfügung, um Fragen zu beantworten, Schadensfälle schnell abzuwickeln oder Unterstützung zu bieten.
+                  Wenn's drauf ankommt, muss es schnell gehen. Ich helfe dir bei der Schadensabwicklung und sorge dafür, dass du zügig dein Geld bekommst. Ohne Bürokratie-Marathon, ohne Stress.
                 </p>
               </CardContent>
             </Card>
@@ -131,7 +131,7 @@ export default function Home() {
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">Hundekrankenversicherung</h3>
-                <p className="text-muted-foreground">Umfassender Schutz für deinen treuen Begleiter – von Vorsorge bis zu komplexen Operationen.</p>
+                <p className="text-muted-foreground">Dein Hund gibt dir alles – gib ihm die beste Versorgung zurück. Von Check-ups bis zur Not-OP ist alles drin.</p>
               </div>
             </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">Katzenkrankenversicherung</h3>
-                <p className="text-muted-foreground">Spezieller Schutz für Samtpfoten – damit deine Katze immer die beste Versorgung erhält.</p>
+                <p className="text-muted-foreground">Samtpfoten brauchen besonderen Schutz. Damit deine Katze immer top versorgt ist – egal was kommt.</p>
               </div>
             </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">Pferdekrankenversicherung</h3>
-                <p className="text-muted-foreground">Maßgeschneiderter Schutz für dein Pferd – von Routineuntersuchungen bis zu Notfallbehandlungen.</p>
+                <p className="text-muted-foreground">Pferde sind eine Investition fürs Herz. Schütz dein Tier mit einer Versicherung, die wirklich passt.</p>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
               <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">Tierhaftpflichtversicherung</h3>
-                <p className="text-muted-foreground">Schütze dich vor Haftungsansprüchen – wichtig für jeden verantwortungsvollen Tierhalter.</p>
+                <p className="text-muted-foreground">Dein Tier macht mal Mist? Passiert. Mit der Tierhaftpflicht bist du auf der sicheren Seite – immer.</p>
               </div>
             </div>
           </div>
@@ -166,10 +166,10 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Sorge für die Sicherheit deines Haustieres
+            Bereit für den besten Schutz?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-primary-foreground/90">
-            Gib deinem Haustier die Sicherheit, die es verdient. Tritt noch heute mit mir in Kontakt und finde die perfekte Versicherung für dein Tier.
+            Lass uns gemeinsam die perfekte Versicherung für deinen Liebling finden. Schnell, unkompliziert und genau auf eure Bedürfnisse zugeschnitten. Schreib mir einfach – ich freu mich drauf!
           </p>
           <Button 
             size="lg" 
@@ -179,6 +179,16 @@ export default function Home() {
             <MessageCircle className="mr-2 h-5 w-5" />
             Jetzt unverbindlich beraten lassen
           </Button>
+        </div>
+      </section>
+
+      {/* ProvenExpert Reviews Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
+            Das sagen unsere Kunden
+          </h2>
+          <div id="pewl"></div>
         </div>
       </section>
 
@@ -233,17 +243,41 @@ export default function Home() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-foreground">Öffnungszeiten</h3>
                 <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="font-semibold text-foreground">Montag - Freitag</span>
-                    <span className="text-muted-foreground">08:30 - 18:00 Uhr</span>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Montag</span>
+                      <span className="text-muted-foreground">08:30 - 12:00 / 14:00 - 17:30 Uhr</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="font-semibold text-foreground">Samstag</span>
-                    <span className="text-muted-foreground">Nach Vereinbarung</span>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Dienstag</span>
+                      <span className="text-muted-foreground">08:30 - 12:00 / 14:00 - 17:30 Uhr</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="font-semibold text-foreground">Sonntag</span>
-                    <span className="text-muted-foreground">Geschlossen</span>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Mittwoch</span>
+                      <span className="text-muted-foreground">08:30 - 12:00 Uhr</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Donnerstag</span>
+                      <span className="text-muted-foreground">08:30 - 12:00 / 14:00 - 17:30 Uhr</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Freitag</span>
+                      <span className="text-muted-foreground">08:30 - 12:00 Uhr</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span className="font-semibold text-foreground">Samstag / Sonntag</span>
+                      <span className="text-muted-foreground">Geschlossen</span>
+                    </div>
                   </div>
                 </div>
                 <div className="mt-8 p-4 bg-primary/10 rounded-lg">

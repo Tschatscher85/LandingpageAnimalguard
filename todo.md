@@ -16,3 +16,11 @@
 - [x] Update Impressum link to correct URL
 - [x] Update Datenschutz link to correct URL
 
+
+- [x] Update opening hours with correct schedule
+- [x] Add ProvenExpert circle widget (fixed position)
+- [x] Add ProvenExpert reviews section to page
+
+
+- [x] Rewrite all texts to be more personal, relaxed and smart while maintaining trustworthiness
+
