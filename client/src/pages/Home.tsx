@@ -1,8 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Heart, Clock, Phone, MessageCircle, Mail, MapPin, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Home() {
+  // Load ProvenExpert widget dynamically
+  useEffect(() => {
+    // Load the ProvenExpert reviews widget
+    const script = document.createElement('script');
+    script.src = 'https://www.provenexpert.com/widget/landing_allianz-jaeger-versicherungen-immobilien.js?feedback=1&avatar=1&competence=1&language=de-de&style=white';
+    script.async = true;
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
   const whatsappNumber = "4973319460350"; // Format: country code + number without spaces
   const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine Tierversicherung und möchte gerne mehr erfahren.");
 
@@ -24,7 +41,7 @@ export default function Home() {
               Dein Partner für alle Felle
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-              Maßgeschneiderter Tiergesundheitsschutz von Ihrem Allianz-Experten Sven Jaeger
+              Maßgeschneiderter Tiergesundheitsschutz von AnimalGuard
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -78,13 +95,13 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
-            Warum AnimalGuard mit Allianz wählen?
+            Warum AnimalGuard?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-8">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Shield className="h-8 w-8 text-primary" />
+                <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Shield className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Rundum-Schutz, der hält</h3>
                 <p className="text-muted-foreground">
@@ -93,10 +110,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-8">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Heart className="h-8 w-8 text-primary" />
+                <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Heart className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Persönlich. Direkt. Ehrlich.</h3>
                 <p className="text-muted-foreground">
@@ -105,10 +122,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-8">
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Clock className="h-8 w-8 text-primary" />
+                <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Clock className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Unkompliziert & schnell</h3>
                 <p className="text-muted-foreground">
@@ -196,7 +213,7 @@ export default function Home() {
       <section id="contact" className="py-16 md:py-24 bg-muted/30">
         <div className="container">
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
-            Ich bin gerne persönlich für dich da
+            Wir sind für Sie persönlich da
           </h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <Card className="border-none shadow-lg">

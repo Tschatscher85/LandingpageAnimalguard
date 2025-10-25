@@ -25,6 +25,16 @@
 - [x] Rewrite all texts to be more personal, relaxed and smart while maintaining trustworthiness
 
 
-- [ ] Fix ProvenExpert reviews widget loading with useEffect hook
+- [x] Fix ProvenExpert reviews widget loading with useEffect hook
 - [x] Make "Jetzt unverbindlich beraten lassen" a prominent button instead of text link
+
+
+- [x] Improve benefits cards with better colors, backgrounds and visual impact
+- [x] Style benefits cards with Allianz blue background like buttons
+- [x] Change "Ich bin gerne persönlich für dich da" to "Wir sind für Sie persönlich da"
+
+
+- - [x] Fix benefits cards - use white background with blue text instead of blue background with white text
+- [x] Change hero subtitle from "von Ihrem Allianz-Experten Sven Jaeger" to "von AnimalGuard"
+- [x] Change "Warum AnimalGuard mit Allianz wählen?" to just "Warum AnimalGuard?"?"
 
