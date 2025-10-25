@@ -39,11 +39,17 @@
 - [x] Change "Warum AnimalGuard mit Allianz wählen?" to just "Warum AnimalGuard?"?"
 
 
--- [ ] Add relevant pet images or icons to the three benefit cards
+- [x] Add relevant icons to the three benefit cards (Shield, Heart, Clock)
 - [x] Change CTA button text from "Jetzt unverbindlich beraten lassen" to "Jetzt unverbindlich schreiben"
 - [x] Add comprehensive "Unsere Leistungen" section with all service detailsils
 
 
 - [x] Change CTA button background to WhatsApp green (#25D366)
 - [x] Add 6th service item to make layout symmetrical (3x2 grid)
+
+
+-- [x] Create Erstinformation page with Sven Jaeger's registration details
+- [x] Create Beschwerden (complaints) page with complaint procedure
+- [x] Add footer links to Erstinformation and Beschwerden pages
+- [x] Change hero section WhatsApp buttons to green backgroundd
 

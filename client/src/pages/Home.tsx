@@ -46,7 +46,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 py-6"
+                className="bg-[#25D366] hover:bg-[#20BA5A] text-white text-lg px-8 py-6"
                 onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
@@ -349,6 +349,12 @@ export default function Home() {
                 </a>
                 <a href="https://vertretung.allianz.de/agentur.svenjaeger/datenschutz/" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background transition-colors">
                   Datenschutz
+                </a>
+                <a href="/erstinformation" className="block text-background/80 hover:text-background transition-colors">
+                  Erstinformation
+                </a>
+                <a href="/beschwerden" className="block text-background/80 hover:text-background transition-colors">
+                  Beschwerden
                 </a>
               </div>
             </div>
