@@ -38,3 +38,8 @@
 - [x] Change hero subtitle from "von Ihrem Allianz-Experten Sven Jaeger" to "von AnimalGuard"
 - [x] Change "Warum AnimalGuard mit Allianz wählen?" to just "Warum AnimalGuard?"?"
 
+
+-- [ ] Add relevant pet images or icons to the three benefit cards
+- [x] Change CTA button text from "Jetzt unverbindlich beraten lassen" to "Jetzt unverbindlich schreiben"
+- [x] Add comprehensive "Unsere Leistungen" section with all service detailsils
+
