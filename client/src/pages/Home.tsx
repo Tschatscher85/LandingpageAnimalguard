@@ -173,10 +173,10 @@ export default function Home() {
           </p>
           <Button 
             size="lg" 
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-8 py-6"
+            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xl px-12 py-8 shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105"
             onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
           >
-            <MessageCircle className="mr-2 h-5 w-5" />
+            <MessageCircle className="mr-3 h-7 w-7" />
             Jetzt unverbindlich beraten lassen
           </Button>
         </div>

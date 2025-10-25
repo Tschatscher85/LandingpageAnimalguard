@@ -24,3 +24,7 @@
 
 - [x] Rewrite all texts to be more personal, relaxed and smart while maintaining trustworthiness
 
+
+- [ ] Fix ProvenExpert reviews widget loading with useEffect hook
+- [x] Make "Jetzt unverbindlich beraten lassen" a prominent button instead of text link
+
