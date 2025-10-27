@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Heart, Clock, Phone, MessageCircle, Mail, MapPin, CheckCircle } from "lucide-react";
+import { Shield, Heart, Clock, Phone, MessageCircle, Mail, MapPin, CheckCircle, Star } from "lucide-react";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -218,9 +218,47 @@ export default function Home() {
       {/* ProvenExpert Reviews Section */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center text-foreground">
             Das sagen unsere Kunden
           </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Mit über 450 Bewertungen kommen wir auf 4,94 von 5 Sterne, uns liegt Ihre Zufriedenheit sehr am Herzen.
+          </p>
+          
+          {/* Rating Display */}
+          <div className="max-w-2xl mx-auto mb-12">
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+              <div className="flex justify-center mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-10 w-10 md:h-12 md:w-12 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <div className="text-center mb-6">
+                <div className="text-5xl md:text-6xl font-bold text-primary mb-2">
+                  4.94 / 5.00
+                </div>
+                <p className="text-muted-foreground text-lg">
+                  Basierend auf 450+ Bewertungen
+                </p>
+              </div>
+              
+              {/* ProvenExpert Badges */}
+              <div className="flex flex-wrap justify-center gap-6 mt-8">
+                <img 
+                  src="/ProvenExpertTopEmpfehlung2024.png" 
+                  alt="Von Kunden Empfohlen 2024" 
+                  className="h-32 md:h-40 object-contain"
+                />
+                <img 
+                  src="/topservice_300.png" 
+                  alt="Top Dienstleister 2024" 
+                  className="h-32 md:h-40 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* ProvenExpert Widget */}
           <div id="pewl"></div>
         </div>
       </section>

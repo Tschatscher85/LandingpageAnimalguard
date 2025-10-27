@@ -53,3 +53,7 @@
 - [x] Add footer links to Erstinformation and Beschwerden pages
 - [x] Change hero section WhatsApp buttons to green backgroundd
 
+
+- [x] Redesign reviews section with 4.94/5.00 rating display and star visualization
+- [x] Add two ProvenExpert badges (Top Dienstleister 2024 + Von Kunden Empfohlen 2024)
+
