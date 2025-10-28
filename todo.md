@@ -61,3 +61,6 @@
 - [x] Add ProvenExpert widgetbar (fixed bottom bar) to all pages
 - [x] Replace old circle widget with new ProvenExpert ProSeal widget on right sidede
 
+
+- [x] Update rating from 4.94 to 4.69 in reviews section
+

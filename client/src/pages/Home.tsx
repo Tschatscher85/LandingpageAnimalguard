@@ -222,7 +222,7 @@ export default function Home() {
             Das sagen unsere Kunden
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            Mit über 450 Bewertungen kommen wir auf 4,94 von 5 Sterne, uns liegt Ihre Zufriedenheit sehr am Herzen.
+            Mit über 450 Bewertungen kommen wir auf 4,69 von 5 Sterne, uns liegt Ihre Zufriedenheit sehr am Herzen.
           </p>
           
           {/* Rating Display */}
@@ -235,7 +235,7 @@ export default function Home() {
               </div>
               <div className="text-center mb-6">
                 <div className="text-5xl md:text-6xl font-bold text-primary mb-2">
-                  4.94 / 5.00
+                  4.69 / 5.00
                 </div>
                 <p className="text-muted-foreground text-lg">
                   Basierend auf 450+ Bewertungen
