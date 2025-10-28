@@ -57,3 +57,7 @@
 - [x] Redesign reviews section with 4.94/5.00 rating display and star visualization
 - [x] Add two ProvenExpert badges (Top Dienstleister 2024 + Von Kunden Empfohlen 2024)
 
+
+- [x] Add ProvenExpert widgetbar (fixed bottom bar) to all pages
+- [x] Replace old circle widget with new ProvenExpert ProSeal widget on right sidede
+

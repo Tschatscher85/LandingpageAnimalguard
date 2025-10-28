@@ -15,6 +15,8 @@
     
     <!-- ProvenExpert Bewertungssiegel -->
     <style type="text/css">body {-ms-overflow-style: scrollbar;} @media(max-width:991px){.ProvenExpert_widget_container {display:none !important;}}</style>
+    <!-- ProvenExpert Widgetbar -->
+    <style type="text/css">@media(max-width:767px){#ProvenExpert_widgetbar_container {display:none !important;}}@media(min-width:768px){html {padding-bottom: 44px; box-sizing: border-box;}}</style>
     <link rel="stylesheet" type="text/css" href="https://www.provenexpert.com/css/widget_landing.css" media="screen,print">
     <script type="text/javascript" src="https://www.provenexpert.com/widget/landing_allianz-jaeger-versicherungen-immobilien.js?feedback=1&avatar=1&competence=1&language=de-de&style=white"></script>
   </head>
@@ -27,9 +29,36 @@
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
     
-    <!-- ProvenExpert Circle Widget -->
-    <span class="ProvenExpert_widget_container" id="provenexpert_circle_widget_cdjvn" style="text-decoration:none;z-index:9999;position:fixed;float:left;line-height:0;right:5px;top:100px;"></span>
-    <script type="text/javascript" async src="https://www.provenexpert.com/widget/circlewidget.js?s=150&id=cdjvn&u=18zAjOmA3VwplWUA3pGB382o48TA1LQB&l=de-de"></script>
+    <!-- ProvenExpert ProSeal Widget -->
+    <noscript>
+      <a href="https://www.provenexpert.com/allianz-jaeger-versicherungen-immobilien/?utm_source=seals&utm_campaign=proseal&utm_medium=profile&utm_content=16d6db2c-b223-44c9-bf8b-280fd5ab6224" target="_blank" title="Customer reviews & experiences for Allianz Jaeger - Versicherungen - Immobilien" class="pe-pro-seal-more-infos">More info</a>
+    </noscript>
+    <script nowprocket id="proSeal">
+      window.loadProSeal = function(){
+          window.provenExpert.proSeal({
+            widgetId: "16d6db2c-b223-44c9-bf8b-280fd5ab6224",
+            language:"de-DE",
+            usePageLanguage: false,
+            bannerColor: "#097E92",
+            textColor: "#FFFFFF",
+            showReviews: true,
+            hideDate: true,
+            hideName: false,
+            hideOnMobile: false,
+            bottom: "250px",
+            stickyToSide: "right",
+            googleStars: true,
+            zIndex: "9999",
+            displayReviewerLastName: false,
+          })
+      };
+    </script>
+    <script nowprocket src="https://s.provenexpert.net/seals/proseal-v2.js" onload='loadProSeal()'></script>
+    <!-- ProvenExpert ProSeal Widget End -->
+    
+    <!-- ProvenExpert Widgetbar (Bottom Bar) -->
+    <div id="ProvenExpert_widgetbar_container"></div>
+    <script type="text/javascript" src="//www.provenexpert.com/widget/bar_allianz-jaeger-versicherungen-immobilien.js?style=white&feedback=1&l=de-de" async></script>
   </body>
 
 </html>
