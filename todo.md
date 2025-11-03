@@ -64,3 +64,9 @@
 
 - [x] Update rating from 4.94 to 4.69 in reviews section
 
+
+- [x] Create useCookieConsent hook for managing cookie preferences
+- [x] Create CookieConsent banner component with DSGVO compliance
+- [x] Integrate cookie banner into App.tsx
+- [x] Add cookie settings dialog with granular controls
+
