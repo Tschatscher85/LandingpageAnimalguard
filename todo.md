@@ -70,3 +70,6 @@
 - [x] Integrate cookie banner into App.tsx
 - [x] Add cookie settings dialog with granular controls
 
+
+- [x] Add Superchat live chat widget to the website
+
