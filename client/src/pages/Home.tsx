@@ -35,27 +35,27 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-[url('/hero-pets.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="container relative z-10 py-20 md:py-32">
+        <div className="container relative z-10 py-12 md:py-20 lg:py-32 px-4">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               Dein Partner für alle Felle
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-primary-foreground/90">
               Maßgeschneiderter Tiergesundheitsschutz von AnimalGuard
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button 
                 size="lg" 
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white text-lg px-8 py-6"
+                className="bg-[#25D366] hover:bg-[#20BA5A] text-white text-base md:text-lg px-6 md:px-8 py-5 md:py-6 min-h-[48px]"
                 onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Unverbindliches Angebot per WhatsApp
+                <MessageCircle className="mr-2 h-5 w-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base md:text-lg">Unverbindliches Angebot per WhatsApp</span>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-white/10 hover:bg-white/20 text-primary-foreground border-primary-foreground/30 text-lg px-8 py-6"
+                className="bg-white/10 hover:bg-white/20 text-primary-foreground border-primary-foreground/30 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 min-h-[48px]"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Kontakt aufnehmen
@@ -66,25 +66,26 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-16 lg:py-24 bg-background">
+        <div className="container px-4">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">
                 Dein Tier verdient den besten Schutz
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6">
                 Mal ehrlich: Dein Vierbeiner ist mehr als nur ein Haustier – er ist Familie. Und genau deshalb sollte auch sein Versicherungsschutz perfekt passen. Ich bin Sven Jaeger, dein Allianz-Partner vor Ort, und ich weiß: Jedes Tier ist anders. Deshalb gibt's bei mir keine Standard-Lösungen von der Stange, sondern Versicherungen, die wirklich zu euch beiden passen.
               </p>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6">
                 Ob Hund, Katze, Kaninchen oder Pferd – mit der richtigen Tierversicherung bist du auf der sicheren Seite. Unerwartete Tierarztkosten, Krankheiten oder Unfälle? Kein Problem! Du konzentrierst dich auf deinen Liebling, ich kümmere mich um den Rest. So einfach kann Versicherung sein.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative mt-6 md:mt-0">
               <img 
                 src="/pets-together.jpg" 
                 alt="Hund und Katze zusammen" 
-                className="rounded-lg shadow-2xl w-full"
+                className="rounded-lg shadow-2xl w-full h-auto"
+                loading="lazy"
               />
             </div>
           </div>
@@ -92,43 +93,43 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
+      <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
+        <div className="container px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-foreground">
             Warum AnimalGuard?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Rundum-Schutz, der hält</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-foreground">Rundum-Schutz, der hält</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Von der Routine-Untersuchung bis zur Not-OP: Die Allianz Tierversicherung deckt alles ab, was dein Tier braucht. Behandlungen, Operationen, Medikamente – du entscheidest, was dir wichtig ist, ich finde den passenden Tarif.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Heart className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Persönlich. Direkt. Ehrlich.</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-foreground">Persönlich. Direkt. Ehrlich.</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Kein Callcenter, keine Warteschleifen. Bei mir erreichst du direkt einen Ansprechpartner, der sich auskennt und Zeit für dich hat. Versprochen! Ruf an, schreib mir per WhatsApp oder komm vorbei – wie's dir passt.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-all hover:scale-105">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Clock className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Unkompliziert & schnell</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-foreground">Unkompliziert & schnell</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Wenn's drauf ankommt, muss es schnell gehen. Ich helfe dir bei der Schadensabwicklung und sorge dafür, dass du zügig dein Geld bekommst. Ohne Bürokratie-Marathon, ohne Stress.
                 </p>
               </CardContent>
@@ -138,57 +139,57 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-foreground">
+      <section className="py-12 md:py-16 lg:py-24 bg-background">
+        <div className="container px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-foreground">
             Unsere Leistungen
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Erfahrung und Expertise</h3>
-                <p className="text-muted-foreground">Dank digitaler Lösungen sind wir Experten auf diesem Gebiet. Wir kennen die spezifischen Herausforderungen und Bedürfnisse von Haustierbesitzern und bieten maßgeschneiderte Lösungen an.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Erfahrung und Expertise</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Dank digitaler Lösungen sind wir Experten auf diesem Gebiet. Wir kennen die spezifischen Herausforderungen und Bedürfnisse von Haustierbesitzern und bieten maßgeschneiderte Lösungen an.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Umfangreiche Leistungen</h3>
-                <p className="text-muted-foreground">Unsere Versicherungsangebote decken eine breite Palette von medizinischen Leistungen ab, einschließlich tierärztlicher Behandlungen, Operationen, Medikamenten und vielem mehr. Du kannst sicher sein, dass dein Haustier in den besten Händen ist.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Umfangreiche Leistungen</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Unsere Versicherungsangebote decken eine breite Palette von medizinischen Leistungen ab, einschließlich tierärztlicher Behandlungen, Operationen, Medikamenten und vielem mehr. Du kannst sicher sein, dass dein Haustier in den besten Händen ist.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Kundenzufriedenheit</h3>
-                <p className="text-muted-foreground">Die Zufriedenheit unserer Kunden hat für uns oberste Priorität. Unsere positiven Kundenbewertungen sprechen für sich und zeigen, dass wir stets bestrebt sind, den besten Service zu bieten.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Kundenzufriedenheit</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Die Zufriedenheit unserer Kunden hat für uns oberste Priorität. Unsere positiven Kundenbewertungen sprechen für sich und zeigen, dass wir stets bestrebt sind, den besten Service zu bieten.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Flexibilität</h3>
-                <p className="text-muted-foreground">Wir bieten maßgeschneiderte Versicherungspakete an, die auf die individuellen Bedürfnisse und das Budget unserer Kunden zugeschnitten sind.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Flexibilität</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Wir bieten maßgeschneiderte Versicherungspakete an, die auf die individuellen Bedürfnisse und das Budget unserer Kunden zugeschnitten sind.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Rund um die Uhr Support</h3>
-                <p className="text-muted-foreground">Unser engagiertes Kundensupport-Team steht dir jederzeit zur Verfügung, um Fragen zu beantworten, Schadensfälle abzuwickeln oder Unterstützung zu bieten. Wir sind nur eine WhatsApp-Nachricht oder eine E-Mail entfernt.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Rund um die Uhr Support</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Unser engagiertes Kundensupport-Team steht dir jederzeit zur Verfügung, um Fragen zu beantworten, Schadensfälle abzuwickeln oder Unterstützung zu bieten. Wir sind nur eine WhatsApp-Nachricht oder eine E-Mail entfernt.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+            <div className="flex items-start gap-3 md:gap-4">
+              <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">Schnelle Schadensregulierung</h3>
-                <p className="text-muted-foreground">Transparente und zügige Abwicklung im Schadensfall. Wir sorgen dafür, dass du schnell die Unterstützung bekommst, die du brauchst – ohne lange Wartezeiten oder komplizierte Formulare.</p>
+                <h3 className="text-lg md:text-xl font-bold mb-2 text-foreground">Schnelle Schadensregulierung</h3>
+                <p className="text-sm md:text-base text-muted-foreground">Transparente und zügige Abwicklung im Schadensfall. Wir sorgen dafür, dass du schnell die Unterstützung bekommst, die du brauchst – ohne lange Wartezeiten oder komplizierte Formulare.</p>
               </div>
             </div>
           </div>
@@ -278,8 +279,8 @@ export default function Home() {
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold text-foreground">Allianz Versicherung Sven Jaeger</p>
-                      <p className="text-muted-foreground">Bahnhofstraße 2</p>
-                      <p className="text-muted-foreground">73329 Kuchen</p>
+                      <p className="text-sm md:text-base text-muted-foreground">Bahnhofstraße 2</p>
+                      <p className="text-sm md:text-base text-muted-foreground">73329 Kuchen</p>
                     </div>
                   </div>
 
