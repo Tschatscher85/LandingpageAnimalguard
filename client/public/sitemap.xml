@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/hund</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/katze</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/pferd</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/ratgeber</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/ratgeber/tierarztkosten-was-kostet-ein-tierarztbesuch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/ratgeber/hund-versichern-worauf-achten</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/ratgeber/katze-oder-hund-versicherung-unterschiede</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/erstinformation</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://animalguard.versicherungs-jaeger.eu/beschwerden</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://animalguard.de/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://animalguard.de/hund</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://animalguard.de/katze</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://animalguard.de/pferd</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://animalguard.de/ratgeber</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://animalguard.de/ratgeber/tierarztkosten-was-kostet-ein-tierarztbesuch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://animalguard.de/ratgeber/hund-versichern-worauf-achten</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://animalguard.de/ratgeber/katze-oder-hund-versicherung-unterschiede</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://animalguard.de/erstinformation</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://animalguard.de/beschwerden</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
