@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import CookieConsent from "./components/CookieConsent";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import FAQSchema from "./components/FAQSchema";
 import Erstinformation from "./pages/Erstinformation";
 import Beschwerden from "./pages/Beschwerden";
 
@@ -37,6 +38,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <CookieConsent />
+          <FAQSchema />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
