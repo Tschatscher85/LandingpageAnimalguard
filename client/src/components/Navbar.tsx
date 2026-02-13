@@ -6,6 +6,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const whatsappNumber = "4973319460350";
   const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine Tierversicherung.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -27,7 +28,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-lg" : "bg-transparent"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
       <div className="container flex items-center justify-between py-3">
         <a href="/" className="flex items-center gap-3">
           <img
@@ -58,12 +59,15 @@ export default function Navbar() {
             <Phone className="w-4 h-4" />
             07331 9460350
           </a>
-          <button
-            onClick={() => scrollTo("vorteile")}
-            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${scrolled ? "bg-[#097E92] text-white hover:bg-[#076b7d]" : "border border-white/40 text-white hover:bg-white/10"}`}
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${scrolled ? "bg-[#25D366] text-white hover:bg-[#20BA5A]" : "bg-[#25D366] text-white hover:bg-[#20BA5A]"}`}
           >
-            Jetzt informieren
-          </button>
+            <MessageCircle className="w-4 h-4 inline mr-1.5" />
+            WhatsApp
+          </a>
         </nav>
 
         {/* Mobile Hamburger */}
@@ -92,13 +96,16 @@ export default function Navbar() {
             <a href="tel:073319460350" className="block px-4 py-3 text-[#003781] font-semibold">
               <Phone className="w-4 h-4 inline mr-2" />07331 9460350
             </a>
-            <button
-              onClick={() => { setMenuOpen(false); window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank'); }}
-              className="w-full mt-2 px-4 py-3 bg-[#25D366] text-white rounded-lg font-bold flex items-center justify-center gap-2"
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full mt-2 px-4 py-3 bg-[#25D366] text-white rounded-lg font-bold text-center"
+              onClick={() => setMenuOpen(false)}
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5 inline mr-2" />
               WhatsApp Beratung
-            </button>
+            </a>
           </nav>
         </div>
       )}
