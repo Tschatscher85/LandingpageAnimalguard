@@ -37,9 +37,7 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
 }
 
 export default function Home() {
-  const whatsappNumber = "4973319460350";
-  const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine Tierversicherung und möchte gerne mehr erfahren.");
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = "https://wa.me/4973319460350?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Tierversicherung.";
 
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
