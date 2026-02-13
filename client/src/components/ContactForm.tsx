@@ -3,17 +3,23 @@ import { Send, CheckCircle, Loader2, Dog, Cat, Rabbit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const tierarten = [
-  { value: "hund", label: "Hund", icon: Dog },
-  { value: "katze", label: "Katze", icon: Cat },
-  { value: "pferd", label: "Pferd", icon: Rabbit },
+  { value: "Hund", label: "Hund", icon: Dog },
+  { value: "Katze", label: "Katze", icon: Cat },
+  { value: "Pferd", label: "Pferd", icon: Rabbit },
 ];
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", telefon: "", tierart: "", nachricht: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [tierartError, setTierartError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!form.tierart) {
+      setTierartError(true);
+      return;
+    }
+    setTierartError(false);
     setStatus("sending");
 
     try {
@@ -89,13 +95,13 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-1.5">Tierart</label>
-          <div className="flex gap-2">
+          <label className="block text-sm font-semibold text-gray-700 mb-1.5">Tierart *</label>
+          <div className={`flex gap-2 ${tierartError ? "ring-2 ring-red-300 rounded-xl p-0.5" : ""}`}>
             {tierarten.map((t) => (
               <button
                 key={t.value}
                 type="button"
-                onClick={() => setForm({ ...form, tierart: t.value })}
+                onClick={() => { setForm({ ...form, tierart: t.value }); setTierartError(false); }}
                 className={`flex-1 flex flex-col items-center gap-1 py-2.5 rounded-xl border-2 transition-all text-sm font-medium ${
                   form.tierart === t.value
                     ? "border-[#097E92] bg-[#097E92]/5 text-[#097E92]"
@@ -107,6 +113,9 @@ export default function ContactForm() {
               </button>
             ))}
           </div>
+          {tierartError && (
+            <p className="text-red-500 text-xs mt-1.5 font-medium">Bitte wähle eine Tierart aus.</p>
+          )}
         </div>
       </div>
 

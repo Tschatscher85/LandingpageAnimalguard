@@ -1,0 +1,16 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003781"/>
+      <stop offset="100%" style="stop-color:#097E92"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="white" fill-opacity="0.12"/>
+  <text x="600" y="240" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="72" font-weight="800">AnimalGuard</text>
+  <text x="600" y="310" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="36" font-weight="400" fill-opacity="0.9">Tierversicherung by Allianz</text>
+  <text x="600" y="400" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="28" font-weight="300" fill-opacity="0.75">Schutz für Hund, Katze &amp; Pferd</text>
+  <text x="600" y="440" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="28" font-weight="300" fill-opacity="0.75">Bis zu 100% Kostenerstattung</text>
+  <rect x="430" y="480" width="340" height="56" rx="28" fill="white"/>
+  <text x="600" y="516" text-anchor="middle" fill="#003781" font-family="Arial,sans-serif" font-size="22" font-weight="700">Jetzt informieren</text>
+</svg>
