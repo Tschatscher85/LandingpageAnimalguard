@@ -8,6 +8,10 @@ import BackToTop from "@/components/BackToTop";
 import StickyCTA from "@/components/StickyCTA";
 import ScrollReveal from "@/components/ScrollReveal";
 import { faqData } from "@/components/FAQSchema";
+import ContactForm from "@/components/ContactForm";
+import TestimonialSlider from "@/components/TestimonialSlider";
+import KostenRechner from "@/components/KostenRechner";
+import { trackUTM } from "@/lib/umami";
 
 function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -46,6 +50,9 @@ export default function Home() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  // Track UTM parameters
+  useEffect(() => { trackUTM(); }, []);
 
   // Load ProvenExpert widget
   useEffect(() => {
@@ -186,6 +193,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== SO FUNKTIONIERT'S ===== */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container px-4">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#003781] mb-4">So einfach geht's</h2>
+              <p className="text-lg text-gray-500">In 3 Schritten zum perfekten Schutz.</p>
+            </div>
+          </ScrollReveal>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { step: "1", title: "Beratung", desc: "Schreib uns per WhatsApp oder ruf an. Wir besprechen, was dein Tier braucht." },
+              { step: "2", title: "Angebot", desc: "Du bekommst ein individuelles Angebot — transparent und ohne versteckte Kosten." },
+              { step: "3", title: "Schutz", desc: "Vertrag abschließen, fertig. Dein Tier ist geschützt und du kannst aufatmen." },
+            ].map((item, i) => (
+              <ScrollReveal key={i}>
+                <div className="text-center">
+                  <div className="relative mx-auto mb-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#097E92] to-[#0a9ab0] rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                      <span className="text-2xl font-extrabold text-white">{item.step}</span>
+                    </div>
+                    {i < 2 && <div className="hidden md:block absolute top-1/2 left-full w-full h-0.5 bg-gradient-to-r from-[#097E92]/30 to-transparent -translate-y-1/2" />}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#003781] mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PARTNER LOGOS ===== */}
+      <section className="py-8 bg-gray-50 border-y border-gray-100">
+        <div className="container px-4">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+            <img src="/logo.png" alt="AnimalGuard" className="h-8 md:h-10 object-contain grayscale" />
+            <div className="text-center">
+              <div className="text-lg font-extrabold text-gray-400">ALLIANZ</div>
+              <div className="text-[10px] text-gray-400 tracking-wider">VERSICHERUNG</div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm font-bold text-gray-400">ProvenExpert</div>
+              <div className="text-[10px] text-gray-400">TOP EMPFEHLUNG</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== ABOUT SECTION ===== */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container px-4">
@@ -272,6 +328,22 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ===== KOSTENRECHNER ===== */}
+      <section className="py-16 md:py-24 bg-white scroll-mt-20">
+        <div className="container px-4">
+          <ScrollReveal>
+            <div className="text-center mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-4 text-xs font-bold text-[#097E92] bg-[#097E92]/10 rounded-full uppercase tracking-wider">
+                Preisbeispiele
+              </div>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-[#003781] mb-4">Was kostet eine Tierversicherung?</h2>
+              <p className="text-lg text-gray-500 max-w-xl mx-auto">Transparente Preise — finde den passenden Tarif.</p>
+            </div>
+          </ScrollReveal>
+          <KostenRechner />
         </div>
       </section>
 
@@ -386,8 +458,13 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
+          {/* Testimonials */}
+          <ScrollReveal>
+            <TestimonialSlider />
+          </ScrollReveal>
+
           {/* ProvenExpert Live Widget */}
-          <div id="pewl" className="max-w-4xl mx-auto"></div>
+          <div id="pewl" className="max-w-4xl mx-auto mt-12"></div>
         </div>
       </section>
 
@@ -520,13 +597,40 @@ export default function Home() {
               </Card>
             </ScrollReveal>
           </div>
+
+          {/* Contact Form */}
+          <ScrollReveal>
+            <div className="max-w-2xl mx-auto mt-12">
+              <div className="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
+                <h3 className="text-xl font-bold text-[#003781] mb-1 text-center">Schreib uns direkt</h3>
+                <p className="text-gray-500 text-sm text-center mb-6">Wir melden uns schnellstmöglich bei dir.</p>
+                <ContactForm />
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Google Maps */}
+          <ScrollReveal>
+            <div className="mt-12 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.8!2d9.7983!3d48.6372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799a3f1c8a12345%3A0x1234567890abcdef!2sBahnhofstra%C3%9Fe%202%2C%2073329%20Kuchen!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Standort Allianz Sven Jaeger"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* ===== FOOTER ===== */}
       <footer className="bg-[#001e33] text-white py-12">
         <div className="container px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img src="/logo.png" alt="AnimalGuard Logo" className="h-10 brightness-0 invert" />
@@ -546,6 +650,13 @@ export default function Home() {
               </div>
             </div>
             <div>
+              <h4 className="font-bold mb-4">Ratgeber</h4>
+              <div className="space-y-2 text-sm mb-6">
+                <a href="/ratgeber" className="block text-white/60 hover:text-white transition-colors">Alle Artikel</a>
+                <a href="/hund" className="block text-white/60 hover:text-white transition-colors">Hundeversicherung</a>
+                <a href="/katze" className="block text-white/60 hover:text-white transition-colors">Katzenversicherung</a>
+                <a href="/pferd" className="block text-white/60 hover:text-white transition-colors">Pferdeversicherung</a>
+              </div>
               <h4 className="font-bold mb-4">Rechtliches</h4>
               <div className="space-y-2 text-sm">
                 <a href="https://vertretung.allianz.de/agentur.svenjaeger/impressum/" target="_blank" rel="noopener noreferrer" className="block text-white/60 hover:text-white transition-colors">Impressum</a>
