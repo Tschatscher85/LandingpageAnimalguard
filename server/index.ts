@@ -23,7 +23,14 @@ async function startServer() {
       }
 
       const brevoApiKey = process.env.BREVO_API_KEY || "";
-      const listId = 20;
+
+      // Brevo Listen je Tierart
+      const tierartListen: Record<string, number> = {
+        "Hund": 14,
+        "Katze": 12,
+        "Pferd": 17,
+      };
+      const listId = tierartListen[tierart || ""] || 14; // Default: Hund
 
       if (!brevoApiKey) {
         console.error("BREVO_API_KEY not set");
